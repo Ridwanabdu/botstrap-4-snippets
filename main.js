@@ -55,12 +55,12 @@ define(function (require, exports, module) {
             CommandManager.get(COMMAND_ID).setChecked(enabled);
         },
 
-        parseLine = function (line, cursorPosition) {
-            var words;
-            line = line.substring(0, cursorPosition);
-            words = line.split(/\W/);
-            return words[words.length - 1];
-        },
+        // parseLine = function (line, cursorPosition) {
+        //     var words;
+        //     line = line.substring(0, cursorPosition);
+        //     words = line.split(/\W/);
+        //     return words[words.length - 1];
+        // },
 
         keyEventHandler = function ($event, editor, event) {
             enabled = prefs.get('enabled');
